@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/authenticationServer.iml" filepath="$PROJECT_DIR$/authenticationServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/authenticationServer-grailsPlugins.iml" filepath="$PROJECT_DIR$/authenticationServer-grailsPlugins.iml" />
+    </modules>
+  </component>
+</project>
+
