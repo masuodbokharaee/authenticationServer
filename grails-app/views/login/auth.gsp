@@ -57,7 +57,7 @@
 	}
 
 	#login #remember_me_holder {
-		padding-left: 120px;
+		/*padding-left: 120px;*/
 	}
 
 	#login #submit {
@@ -83,6 +83,7 @@
         background-color: rgba(17, 141, 6, 0.58);
         text-shadow: 1px 1px 6px rgb(0, 156, 6);
         padding-bottom: 10px;
+        cursor: pointer;
 	}
     #login #submit:hover{
         border-radius: 5px 5px 5px 5px;
@@ -91,8 +92,8 @@
 	#login #remember_me_holder label {
 		float: none;
 		margin-left: 0;
-		text-align: left;
-		width: 200px
+		/*text-align: left;
+		width: 200px*/
 	}
 
 	#login .inner .login_message {
@@ -105,7 +106,8 @@
 	}
 
 	#login .inner .chk {
-		height: 12px;
+		height: 15px;
+        float: left;
 	}
 	</style>
 </head>
@@ -136,7 +138,7 @@
 			</p>
 
 			<p>
-				<input type='submit' id="submit" value='${message(code: "springSecurity.login.button")}'/>
+				<input type='submit' id="submit" title="<g:message code="springSecurity.login.button"/>" value='${message(code: "springSecurity.login.button")}'/>
 			</p>
 		</form>
 	</div>
