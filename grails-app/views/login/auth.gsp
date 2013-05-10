@@ -24,9 +24,9 @@
 	}
 
 	#login .inner .fheader {
-		padding: 18px 26px 14px 26px;
+		padding: 18px 26px 9px 26px;
 		background-color: #abbf78;
-		margin: 0px 0 14px 0;
+		margin: 0px 0 9px 0;
 		color: #2e3741;
 		font-size: 18px;
 		font-weight: bold;
@@ -99,6 +99,12 @@
 	#login .inner .login_message {
 		padding: 6px 25px 20px 25px;
 		color: #c33;
+        text-align: right;
+        direction: rtl;
+        border: 1px double gray;
+        margin-bottom: 10px;
+        background-color: rgba(109, 141, 82, 0.57);
+        border-radius: 10px;
 	}
 
 	#login .inner .text_ {
