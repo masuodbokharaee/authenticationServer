@@ -8,5 +8,9 @@ class Device {
     String type
 
     static constraints = {
+        serial()
+        data()
+        status()
+        type()
     }
 }

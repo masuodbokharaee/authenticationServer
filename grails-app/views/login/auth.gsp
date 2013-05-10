@@ -1,12 +1,13 @@
 <html>
 <head>
 	<meta name='layout' content='main'/>
-	<title><g:message code="springSecurity.login.title"/></title>
+	<title><g:message code="login.title1" /></title>
 	<style type='text/css' media='screen'>
 	#login {
 		margin: 15px 0px;
 		padding: 0px;
-		text-align: center;
+		text-align: right;
+        direction: rtl;
 	}
 
 	#login .inner {
@@ -15,7 +16,7 @@
 		margin: 60px auto;
 		text-align: left;
 		border: 1px solid #aab;
-		background-color: #f0f0fa;
+		background-color: #abbf78;
 		-moz-box-shadow: 2px 2px 2px #eee;
 		-webkit-box-shadow: 2px 2px 2px #eee;
 		-khtml-box-shadow: 2px 2px 2px #eee;
@@ -24,11 +25,12 @@
 
 	#login .inner .fheader {
 		padding: 18px 26px 14px 26px;
-		background-color: #f7f7ff;
+		background-color: #abbf78;
 		margin: 0px 0 14px 0;
 		color: #2e3741;
 		font-size: 18px;
 		font-weight: bold;
+        text-align: right;
 	}
 
 	#login .inner .cssform p {
@@ -46,7 +48,7 @@
 
 	#login .inner .cssform label {
 		font-weight: bold;
-		float: left;
+		float: right;
 		text-align: right;
 		margin-left: -105px;
 		width: 110px;
@@ -59,8 +61,32 @@
 	}
 
 	#login #submit {
-		margin-left: 15px;
+      /*  display: block;*/
+        font: bolder 15px tahoma;
+        text-decoration: none;
+        width: 120px;
+        text-align: center;
+        /*border-top-left-radius: 30px 50px;*/
+        border-bottom-left-radius: 30px 50px;
+        border-top-right-radius: 30px 50px;
+       /* border-bottom-right-radius: 30px 50px;*/
+        -moz-border-radius-topleft: 30px 50px;
+        -moz-border-radius-topright: 30px 50px;
+        -moz-border-radius-bottomright: 30px 50px;
+        -moz-border-radius-bottomleft: 30px 50px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        color: #ffffff;
+        background-color: rgba(17, 141, 6, 0.58);
+        text-shadow: 1px 1px 6px rgb(0, 156, 6);
+        padding-bottom: 10px;
 	}
+    #login #submit:hover{
+        border-radius: 5px 5px 5px 5px;
+    }
 
 	#login #remember_me_holder label {
 		float: none;

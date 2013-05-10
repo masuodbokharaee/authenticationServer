@@ -8,5 +8,9 @@ class Request {
     String ip
 
     static constraints = {
+        device()
+        date()
+        result()
+        ip ()
     }
 }
