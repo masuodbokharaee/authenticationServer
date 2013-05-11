@@ -32,10 +32,10 @@
         border: 1px solid #172b4e;
         border-bottom-color: #142647;
         border-radius: 5px;
-        background-image: -webkit-radial-gradient(cover, #00ee0d, #228722);
-        background-image: -moz-radial-gradient(cover, #00ee0d, #228722);
-        background-image: -o-radial-gradient(cover, #00ee0d, #228722);
-        background-image: radial-gradient(cover, #00ee0d, #228722);
+        background-image: -webkit-radial-gradient(cover, rgb(86, 160, 95), rgb(0, 0, 0));
+        background-image: -moz-radial-gradient(cover, #56A05F, #000000);
+        background-image: -o-radial-gradient(cover, #56A05F, #000000);
+        background-image: radial-gradient(cover, #56A05F, #000000);
         -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 2px 10px rgba(0, 0, 0, 0.5);
         box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 2px 10px rgba(0, 0, 0, 0.5);
 	}
@@ -138,10 +138,10 @@
 	}
     #login #submit:hover{
 
-        background-image: -webkit-radial-gradient(cover, #00ee0d, #228722);
-        background-image: -moz-radial-gradient(cover, #00ee0d, #228722);
-        background-image: -o-radial-gradient(cover, #00ee0d, #228722);
-        background-image: radial-gradient(cover, #00ee0d, #228722);
+        background-image: -webkit-radial-gradient(cover, #56A05F, #228722);
+        background-image: -moz-radial-gradient(cover, #56A05F, #228722);
+        background-image: -o-radial-gradient(cover, #56A05F, #228722);
+        background-image: radial-gradient(cover, #056A05F, #228722);
         border-radius: 5px 5px 5px 5px;
     }
 
@@ -150,6 +150,7 @@
 		margin-left: 0;
 		/*text-align: left;
 		width: 200px*/
+        color: white;
 	}
 
 	#login .inner .login_message {
