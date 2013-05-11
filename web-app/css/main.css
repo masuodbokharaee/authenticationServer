@@ -601,3 +601,130 @@ a.skip {
 	position: absolute;
 	left: -9999px;
 }
+
+/* tooltip */
+
+
+.tool-tip{
+    color: #fff;
+    background-color: rgba( 0, 0, 0, .7);
+    text-shadow: none;
+    font-size: .8em;
+    visibility: hidden;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    text-align: center;
+    opacity: 0;
+    z-index: 999;
+    padding: 3px 8px;
+    position: absolute;
+    cursor: default;
+    -webkit-transition: all 240ms ease-in-out;
+    -moz-transition: all 240ms ease-in-out;
+    -ms-transition: all 240ms ease-in-out;
+    -o-transition: all 240ms ease-in-out;
+    transition: all 240ms ease-in-out;
+}
+
+.tool-tip,
+.tool-tip.top{
+    top: auto;
+    bottom: 114%;
+    left: 50%;
+}
+
+.tool-tip.top:after,
+.tool-tip:after{
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    margin-left: -7px;
+    content: ' ';
+    height: 0px;
+    width: 0px;
+    border: 6px solid transparent;
+    border-top-color: rgba( 0, 0, 0, .7);
+}
+
+/* default heights, width and margin w/o Javscript */
+
+.tool-tip,
+.tool-tip.top{
+    width: 120px;
+    height: 35px;
+    margin-left: -43px;
+}
+
+/* tool tip position left */
+
+.tool-tip.left{
+    top: 50%;
+    left: auto;
+    right: 105%;
+    margin-top: -15px;
+    margin-left: auto;
+}
+
+.tool-tip.left:after{
+    left: auto;
+    right: -12px;
+    top: 50%;
+    margin-top: -6px;
+    bottom: auto;
+    border-top-color: transparent;
+    border-left-color: rgba( 0, 0, 0, .7);
+}
+
+
+/* tooltip on focus left and right */
+
+.on-focus .tool-tip.left,
+.on-focus .tool-tip.right{
+    margin-top: -23px;
+}
+
+/* on hover of element containing tooltip default*/
+
+*:not(.on-focus):hover > .tool-tip,
+.on-focus input:focus + .tool-tip{
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 240ms ease-in-out;
+    -moz-transition: all 240ms ease-in-out;
+    -ms-transition: all 240ms ease-in-out;
+    -o-transition: all 240ms ease-in-out;
+    transition: all 240ms ease-in-out;
+}
+
+
+/* tool tip slide out */
+
+*:not(.on-focus) > .tool-tip.slideIn,
+.on-focus > .tool-tip{
+    display: block;
+}
+
+.on-focus > .tool-tip.slideIn{
+    z-index: -1;
+}
+
+.on-focus > input:focus + .tool-tip.slideIn{
+    z-index: 1;
+}
+
+
+
+/* left slideIn */
+
+*:not(.on-focus) > .tool-tip.slideIn.left,
+.on-focus > .tool-tip.slideIn.left{
+    right: 50%;
+}
+
+*:not(.on-focus):hover > .tool-tip.slideIn.left,
+.on-focus > input:focus + .tool-tip.slideIn.left{
+    right: 105%;
+}
+

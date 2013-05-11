@@ -209,15 +209,21 @@
 		</g:if>
 
 		<form action='${postUrl}' method='POST' id='loginForm' class='cssform' autocomplete='off'>
-			<p>
+            <p>
+			 <div class="on-focus clearfix" style="position: relative; padding: 0px; margin: 10px auto">
+
 
 				<input type='text' class='text_' name='j_username' id='username' placeholder="<g:message code="springSecurity.login.username.label"/>" autofocus/>
+            <div class="tool-tip slideIn left"><g:message code="userinfo" /></div>
 
-			</p>
-
+             </div>
+        </p>
 			<p>
-
+            <div class="on-focus clearfix" style="position: relative; padding: 0px; margin: 10px auto">
 				<input type='password' class='text_' name='j_password' id='password' placeholder="<g:message code="springSecurity.login.password.label"/>" autofocus/>
+            <div class="tool-tip slideIn left"><g:message code="passinfo" /></div>
+
+        </div>
 			</p>
 
 			<p id="remember_me_holder">
