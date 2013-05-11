@@ -48,7 +48,10 @@ body {
 }
 
 #grailsLogo {
-	background-color: #abbf78;
+    background-image: -webkit-radial-gradient(cover, #00ee0d, #228722);
+    background-image: -moz-radial-gradient(cover, #00ee0d, #228722);
+    background-image: -o-radial-gradient(cover, #00ee0d, #228722);
+    background-image: radial-gradient(cover, #00ee0d, #228722);
 }
 
 /* replace with .no-boxshadow body if you have modernizr available */
@@ -108,7 +111,10 @@ img {
 }
 
 .footer {
-	background: #abbf78;
+    background-image: -webkit-radial-gradient(cover, #00ee0d, #228722);
+    background-image: -moz-radial-gradient(cover, #00ee0d, #228722);
+    background-image: -o-radial-gradient(cover, #00ee0d, #228722);
+    background-image: radial-gradient(cover, #00ee0d, #228722);
 	color: #000;
 	clear: both;
 	font-size: 0.8em;
@@ -280,6 +286,7 @@ input:focus, select:focus, textarea:focus {
 	   -moz-box-shadow: 0 0 0.5em #ffffff;
 	-webkit-box-shadow: 0 0 0.5em #ffffff;
 	        box-shadow: 0 0 0.5em #ffffff;
+
 }
 
 .required-indicator {
