@@ -151,6 +151,7 @@
 		/*text-align: left;
 		width: 200px*/
         color: white;
+        margin-right: 70px;
 	}
 
 	#login .inner .login_message {
@@ -195,6 +196,7 @@
 	#login .inner .chk {
 		height: 15px;
         float: left;
+        margin-left: 80px;
 	}
 	</style>
 </head>
