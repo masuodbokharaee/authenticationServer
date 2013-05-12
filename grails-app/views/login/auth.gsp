@@ -29,9 +29,9 @@
         width: 300px;
         background: #228722;
         background-clip: padding-box;
-        border: 1px solid #172b4e;
-        border-bottom-color: #142647;
-        border-radius: 5px;
+      /*  border: 1px solid #0e4e15;*/
+       /* border-bottom-color: #0e4e15;*/
+        border-radius: 25px;
         background-image: -webkit-radial-gradient(cover, rgb(86, 160, 95), rgb(0, 0, 0));
         background-image: -moz-radial-gradient(cover, #56A05F, #000000);
         background-image: -o-radial-gradient(cover, #56A05F, #000000);
