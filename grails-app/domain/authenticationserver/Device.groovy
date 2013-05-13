@@ -9,7 +9,7 @@ class Device {
 
     static constraints = {
         serial()
-        data()
+        data(nullable:true, maxSize: 1000000)
         status()
         type()
     }
