@@ -33,8 +33,8 @@
             </a>
         </li>
         <g:each in="${menu}" var="menuItem">
-
-            <li class="" >
+            <g:set var="selectedMenuItemClass" value="${menuItem==params.action?'selected':''}"/>
+            <li class="${selectedMenuItemClass}" >
             <a class="" href="<g:createLink controller="authenticationServer" action="${menuItem}"/>">${menuItem}</a>
 
             </li>
