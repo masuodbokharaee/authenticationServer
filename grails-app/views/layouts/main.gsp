@@ -21,7 +21,7 @@
 		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
 <sec:ifLoggedIn>
     <div class="nav">
-        <g:set var="menu" value="['activeMobile','defineMobile','enterVasco','viewVasco','enterPass','viewPass']"/>
+        <g:set var="menu" value="['activeMobile','defineMobile','enterVasco','viewVasco','enterRecoverPass','viewRecoverPass']"/>
         <ul class=" nav-list">
         <g:set var="isInHouse" value="${false}"/>
         <g:if test="${!params.controller}">

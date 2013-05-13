@@ -6,8 +6,8 @@ class AuthenticationServerController {
     def enterVasco () {}
 
     def viewVasco (){}
-    def enterPass () {}
-    def viewPass () {}
+    def enterRecoverPass() {}
+    def viewRecoverPass() {}
     def defineMobile () {}
     def activeMobile () {}
 }

@@ -78,6 +78,102 @@ body {
     background-image: radial-gradient(cover, #F1F1B0, #000000);
 }
 
+.Serreco {
+    position: relative;
+    margin: 50px auto;
+    width: 400px;
+    min-height: 200px;
+    z-index: 100;
+    padding: 30px;
+    border: 1px solid #383838;
+    background-clip: padding-box;
+    border-radius: 25px;
+    background-image: -webkit-radial-gradient(cover, rgb(86, 160, 95), rgb(0, 0, 0));
+    background-image: -moz-radial-gradient(cover, #56A05F, #000000);
+    background-image: -o-radial-gradient(cover, #56A05F, #000000);
+    background-image: radial-gradient(cover, #56A05F, #000000);
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.iconic{
+    width: 400px;
+    margin: 0 auto;
+    font-weight: bold;
+    color:#ffffff;
+    padding-bottom: 10px;
+}
+.inserco{
+    outline: none;
+    display: block;
+    width: 380px;
+    padding: 4px 8px;
+    border: 1px dashed #DBDBDB;
+    color: #3F3F3F;
+    font-family: 'Droid Sans',Tahoma,Arial,Verdana sans-serif;
+    font-size: 14px;
+    /*border-radius*/
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    /*transition*/
+    -webkit-transition: background 0.2s linear, box-shadow 0.6s linear;
+    -moz-transition: background 0.2s linear, box-shadow 0.6s linear;
+    -o-transition: background 0.2s linear, box-shadow 0.6s linear;
+    transition: background 0.2s linear, box-shadow 0.6s linear;
+}
+
+.psereco{
+    margin-bottom: 30px;
+}
+
+.subreco{
+    font-weight: bold;
+    text-shadow: 0 1px 0 white;
+    text-decoration: none;
+    color: black;
+    background-color: #F2F2F2;
+    padding: 10px 30px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    background-image: -webkit-linear-gradient(90deg, #DBDBDB, #F2F2F2);
+    background-image: -moz-linear-gradient(90deg, #DBDBDB, #F2F2F2);
+    background-image: -ms-linear-gradient(90deg, #DBDBDB, #F2F2F2);
+    background-image: -o-linear-gradient(90deg, #DBDBDB, #F2F2F2);
+    background-image: linear-gradient(90deg, #DBDBDB, #F2F2F2);
+    border: 1px solid #B3B3B3;
+    -webkit-box-shadow: inset 0 0 2px 1px white, 0 2px 5px rgba(0,0,0,0.15), inset 0 -17px 0 rgba(0,0,0,0.06);
+    -moz-box-shadow: inset 0 0 2px 1px white, 0 2px 5px rgba(0,0,0,0.15), inset 0 -17px 0 rgba(0,0,0,0.06);
+    box-shadow: inset 0 0 2px 1px white, 0 2px 5px rgba(0,0,0,0.15), inset 0 -17px 0 rgba(0,0,0,0.06);
+}
+
+.butre{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.subreco:hover{
+    background-image: -webkit-linear-gradient(90deg, #E8E8E8, #F7F7F7);
+    background-image: -moz-linear-gradient(90deg, #E8E8E8, #F7F7F7);
+    background-image: -ms-linear-gradient(90deg, #E8E8E8, #F7F7F7);
+    background-image: -o-linear-gradient(90deg, #E8E8E8, #F7F7F7);
+    background-image: linear-gradient(90deg, #E8E8E8, #F7F7F7);
+}
+.subreco .pushed{
+    position: relative;
+}
+
+.subreco .pushed:active{
+    top: 2px;
+}
+
+.subreco:active{
+    -webkit-box-shadow: inset 0 0 2px 1px rgba(0,0,0,0.1), inset 0 -17px 0 rgba(0,0,0,0.06);
+    -moz-box-shadow: inset 0 0 2px 1px rgba(0,0,0,0.1), inset 0 -17px 0 rgba(0,0,0,0.06);
+    box-shadow: inset 0 0 2px 1px rgba(0,0,0,0.1), inset 0 -17px 0 rgba(0,0,0,0.06);
+}
+
 /* replace with .no-boxshadow body if you have modernizr available */
 .ie6 body,
 .ie7 body,
@@ -420,9 +516,9 @@ fieldset.embedded legend {
 /* same effects for browsers that support HTML5 client-side validation (these have to be specified separately or IE will ignore the entire rule) */
 
 input:invalid, select:invalid, textarea:invalid {
-	background: #fff3f3;
+	/*background: #fff3f3;
 	border-color: #ffaaaa;
-	color: #cc0000;
+	color: #cc0000;  */
 }
 
 input:invalid:focus, select:invalid:focus, textarea:invalid:focus {
