@@ -14,7 +14,7 @@
             <p class="psereco"> <label for="offerpass" class="iconic" > offerpass </label>
                 <input class="inserco" type="text" name="offerpass" id="offerpass"  required="required" placeholder="plz enter ur offerinh password"  /> </p>
             <fieldset class="butre">
-            <g:submitButton name="submit" class="subreco pushed" value="submit"/>
+            <g:submitButton name="submit" class="subreco pushed" value="submit" />
             </fieldset>
 </div>
 </body>
