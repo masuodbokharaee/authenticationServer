@@ -5,6 +5,10 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-   <p>salam bar hame</p>
+   <div class="Serreco">
+       <div class="showresult">
+      <a> <g:createLink controller="authenticationServer" action="defineMobile"/> </a>
+       </div>
+   </div>
 </body>
 </html>
