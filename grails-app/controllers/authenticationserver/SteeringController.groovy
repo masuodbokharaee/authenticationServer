@@ -1,13 +1,13 @@
 package authenticationserver
 
-class AuthenticationServerController {
+class SteeringController {
 
-    def index() { }
+    def index() {}
     def enterVasco () {}
-
     def viewVasco (){}
     def enterRecoverPass() {}
     def viewRecoverPass() {}
     def defineMobile () {}
     def activeMobile () {}
 }
+

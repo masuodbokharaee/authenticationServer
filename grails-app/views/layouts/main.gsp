@@ -7,9 +7,9 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>authenticationServer</title>
+		<title><g:message code="samane.ehraz.hoviate.chand.amele" /></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="${resource(dir: 'images', file: 'favicon.ico')}" type="image/x-icon">
+		<link rel="shortcut icon" href="${resource(dir: 'images', file: 'favicon1.ico')}" type="image/x-icon">
 		<link rel="apple-touch-icon" href="${resource(dir: 'images', file: 'apple-touch-icon.png')}">
 		<link rel="apple-touch-icon" sizes="114x114" href="${resource(dir: 'images', file: 'apple-touch-icon-retina.png')}">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
@@ -21,10 +21,12 @@
 		<r:layoutResources />
 	</head>
 	<body>
-		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
+		<div id="grailsLogo" role="banner"><img src="${resource(dir: 'images', file: 'mobile.png')}" width="50px" height="50px"/>
+            <a id="tlogo" href=""><g:message code="samane.ehraz.hoviate.chand.amele" /></a>
+        </div>
 <sec:ifLoggedIn>
     <div class="nav">
-        <g:set var="menu" value="['activeMobile','defineMobile','enterVasco','viewVasco','enterRecoverPass','viewRecoverPass']"/>
+        <g:set var="menu" value="[steering:['defineMobile','enterVasco','enterRecoverPass'],reports:[] , management:[] ]"/>
         <ul class=" nav-list">
         <g:set var="isInHouse" value="${false}"/>
         <g:if test="${!params.controller}">
@@ -36,11 +38,21 @@
             </a>
         </li>
         <g:each in="${menu}" var="menuItem">
-            <g:set var="selectedMenuItemClass" value="${menuItem==params.action?'selected':''}"/>
+            <g:set var="selectedMenuItemClass" value="${menuItem.key==params.controller?'selected':''}"/>
             <li class="${selectedMenuItemClass}" >
-            <a class="" href="<g:createLink controller="authenticationServer" action="${menuItem}"/>">${menuItem}</a>
-
+                <a class="" href="<g:createLink controller="${menuItem.key}" />" title="<g:message code="${menuItem.key}" />">
+                    <g:message code="${menuItem.key}" />
+                </a>
+                <g:set var="showSubMenuItemClass" value="${menuItem.key==params.controller?'show':'hidden'}"/>
+                <ul class="${showSubMenuItemClass} " role="menu">
+                    <g:each in="${menuItem.value}" var="menuSubItem">
+                        <g:set var="selectedSubMenuItemClass" value="${menuSubItem==params.action?'selectedsubmenu':''}"/>
+                        <li class="${selectedSubMenuItemClass}"><a class="" href="<g:createLink controller="${menuItem.key}" action="${menuSubItem}"/>"><g:message code="${menuSubItem}"/></a></li>
+                    </g:each>
+                    <li class="linemenu"></li>
+                </ul>
             </li>
+
         </g:each>
         </ul>
     </div>
