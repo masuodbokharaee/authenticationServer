@@ -71,7 +71,11 @@ body {
     display:none;
 }
 
-
+.nav .show a{
+    display: block;
+    padding-right: 25px;
+    color: #007404;
+}
 .Serreco {
     position: relative;
     margin: 50px auto;
@@ -185,6 +189,15 @@ body {
     text-align: center;
 }
 
+.leftlog{
+    direction: ltr;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
 /* replace with .no-boxshadow body if you have modernizr available */
 .ie6 body,
 .ie7 body,
@@ -226,12 +239,12 @@ img {
 }
 
 /* GENERAL */
-
+/*
 #grailsLogo a {
 	display: inline-block;
 
 }
-
+         */
 .content {
 }
 
@@ -276,8 +289,8 @@ img {
 /* NAVIGATION MENU */
 
 .nav {
-	background-color: #efefef;
-	padding: 0.5em 0.75em;
+	background-color: #cccccc;
+	padding: 0.3em 0.75em;
 	   -moz-box-shadow: 0 0 3px 1px #aaaaaa;
 	-webkit-box-shadow: 0 0 3px 1px #aaaaaa;
 	        box-shadow: 0 0 3px 1px #aaaaaa;
@@ -298,8 +311,9 @@ img {
 	padding: 0;
 }
 .nav li.selected {
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(128, 128, 128);
     border-radius: 10px;
+    color: #ffffff;
 }
 
 .nav a {
@@ -313,11 +327,11 @@ img {
 }
 
 .nav a:active, .nav a:visited {
-	color: #666666;
+	color: #052905;
 }
 
 .nav a:focus, .nav a:hover {
-	background-color: #999999;
+	background-color: #696969;
 	color: #ffffff;
 	outline: none;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
@@ -325,7 +339,7 @@ img {
 
 .no-borderradius .nav a:focus, .no-borderradius .nav a:hover {
 	background-color: transparent;
-	color: #444444;
+	color: #c6c6c6;
 	text-decoration: underline;
 }
 
@@ -899,3 +913,4 @@ a.skip {
 
 .qq-upload-failed-text {display:none;}
 .qq-upload-fail .qq-upload-failed-text {display:inline;}
+

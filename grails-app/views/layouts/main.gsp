@@ -14,6 +14,7 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="${resource(dir: 'images', file: 'apple-touch-icon-retina.png')}">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.css')}" type="text/css">
     <uploader:head css="/path/to/main.css" />
     <r:require module="fileuploader" />
 
@@ -23,18 +24,25 @@
 	<body>
 		<div id="grailsLogo" role="banner"><img src="${resource(dir: 'images', file: 'mobile.png')}" width="50px" height="50px"/>
             <a id="tlogo" href=""><g:message code="samane.ehraz.hoviate.chand.amele" /></a>
+<sec:ifLoggedIn>
+    <g:link controller="logout">
+        <img class="leftlog" title="<g:message code="log.in.out"/>"
+             src="${resource(dir: 'images/skin', file:
+                     "logout1.png")}" width="20px" height="20px"/>
+    </g:link>
+    </sec:ifLoggedIn>
         </div>
 <sec:ifLoggedIn>
     <div class="nav">
-        <g:set var="menu" value="[steering:['defineMobile','enterVasco','enterRecoverPass'],reports:[] , management:[] ]"/>
-        <ul class=" nav-list">
+        <g:set var="menu" value="[steering:['defineMobile','enterVasco','enterRecoverPass'],reports:[''] , management:[] ]"/>
+        <ul class="nav-list">
         <g:set var="isInHouse" value="${false}"/>
         <g:if test="${!params.controller}">
             <g:set var="isInHouse" value="${true}"/>
         </g:if>
         <li class="${isInHouse?"selected":""}" >
             <a href="<g:createLink uri="/"/>">
-                home
+                <g:message code="home" />
             </a>
         </li>
         <g:each in="${menu}" var="menuItem">
@@ -44,12 +52,11 @@
                     <g:message code="${menuItem.key}" />
                 </a>
                 <g:set var="showSubMenuItemClass" value="${menuItem.key==params.controller?'show':'hidden'}"/>
-                <ul class="${showSubMenuItemClass} " role="menu">
+                <ul class="${showSubMenuItemClass}" role="menu">
                     <g:each in="${menuItem.value}" var="menuSubItem">
                         <g:set var="selectedSubMenuItemClass" value="${menuSubItem==params.action?'selectedsubmenu':''}"/>
                         <li class="${selectedSubMenuItemClass}"><a class="" href="<g:createLink controller="${menuItem.key}" action="${menuSubItem}"/>"><g:message code="${menuSubItem}"/></a></li>
                     </g:each>
-                    <li class="linemenu"></li>
                 </ul>
             </li>
 
