@@ -21,9 +21,10 @@
     <g:layoutHead/>
 		<r:layoutResources />
 	</head>
+
 	<body>
 		<div id="grailsLogo" role="banner"><img src="${resource(dir: 'images', file: 'mobile.png')}" width="50px" height="50px"/>
-            <a id="tlogo" href=""><g:message code="samane.ehraz.hoviate.chand.amele" /></a>
+            <a href=""><span id="tlogo"><g:message code="samane.ehraz.hoviate.chand.amele" /></span></a>
 <sec:ifLoggedIn>
     <g:link controller="logout">
         <img class="leftlog" title="<g:message code="log.in.out"/>"

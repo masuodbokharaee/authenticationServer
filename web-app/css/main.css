@@ -59,14 +59,16 @@ body {
     padding-top: 10px;
     height: 55px;
 }
+
 #tlogo{
     color: #d7d7d7;
     font-weight: bold;
     font-size: 20px;
     padding-bottom: 9px;
     padding-right: 10px;
-
 }
+
+
 .hidden{
     display:none;
 }
@@ -197,6 +199,9 @@ body {
     margin-top: 2px;
     cursor: pointer;
 }
+.leftlog:hover{
+       width: 4%;
+   }
 
 /* replace with .no-boxshadow body if you have modernizr available */
 .ie6 body,
